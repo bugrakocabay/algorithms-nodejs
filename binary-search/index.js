@@ -1,10 +1,12 @@
 const binarySearch = (arr, target) => {
 	let left = 0;
 	let right = arr.length;
+	let indexToCheck;
+	let checking;
 
 	while (right > left) {
-		const indexToCheck = Math.floor((left + right) / 2);
-		const checking = arr[indexToCheck];
+		indexToCheck = Math.floor((left + right) / 2);
+		checking = arr[indexToCheck];
 		console.log(indexToCheck);
 
 		if (checking === target) {
